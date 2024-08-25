@@ -7,14 +7,13 @@ import { ReactComponent as BootstrapIcon } from "../../assets/img/bootstrap-5.sv
 import { ReactComponent as MySqlIcon } from "../../assets/img/mysql.svg";
 import { ReactComponent as TailwindIcon } from "../../assets/img/tailwindcss.svg";
 import { ReactComponent as TypeScriptIcon } from "../../assets/img/typescript.svg";
+import { forwardRef, HtmlHTMLAttributes, MutableRefObject } from "react";
 
-const Skills = () => {
+const Skills = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <Card className="bg-white pb-12">
+    <Card className="bg-white pb-12" ref={ref}>
       <div className="flex flex-col items-center justify-center container">
-        <span className="font-bold text-2xl" id="about">
-          Skills
-        </span>
+        <span className="font-bold text-2xl">Skills</span>
         <div className="w-full flex-col flex gap-12 justify-center items-center pt-12 md:flex-row">
           <LaravelIcon className="w-24 h-24 "></LaravelIcon>
           <ReactIcon className="w-24 h-24 "></ReactIcon>
@@ -28,6 +27,6 @@ const Skills = () => {
       </div>
     </Card>
   );
-};
+});
 
 export default Skills;

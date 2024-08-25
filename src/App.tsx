@@ -5,15 +5,25 @@ import Nav from "./components/Nav/Nav";
 import Project from "./components/Project/Project";
 import Skills from "./components/Skills/Skills";
 
+import { useRef } from "react";
+
 function App() {
+  const aboutRef = useRef<HTMLDivElement | null>(null);
+  const projectRef = useRef<HTMLDivElement | null>(null);
+  const contactRef = useRef<HTMLDivElement | null>(null);
+
   return (
     <div className="font-Syne">
-      <Nav />
+      <Nav
+        aboutRef={aboutRef}
+        projectRef={projectRef}
+        contactRef={contactRef}
+      />
       <Hero />
-      <Skills />
+      <Skills ref={aboutRef} />
       <About />
-      <Project />
-      <Contact />
+      <Project ref={projectRef} />
+      <Contact ref={contactRef} />
     </div>
   );
 }

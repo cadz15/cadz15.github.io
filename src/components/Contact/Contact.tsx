@@ -1,15 +1,13 @@
-import React from "react";
+import React, { forwardRef, HTMLAttributes } from "react";
 import Card from "../Card/Card";
 import Button from "../Button/Button";
+import { ScrollToRefInterface } from "../Nav/Nav";
 
-const Contact = () => {
+const Contact = forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <Card className="bg-[#D26EDA]">
+    <Card className="bg-[#D26EDA]" ref={ref}>
       <div className="container flex flex-col">
-        <span
-          className="w-full font-bold text-2xl text-center mb-12 "
-          id="contact"
-        >
+        <span className="w-full font-bold text-2xl text-center mb-12 ">
           Contact
         </span>
         <div className="flex flex-col gap-12 justify-center md:flex-row">
@@ -32,6 +30,6 @@ const Contact = () => {
       </div>
     </Card>
   );
-};
+});
 
 export default Contact;

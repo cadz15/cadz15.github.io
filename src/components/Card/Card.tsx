@@ -1,19 +1,21 @@
 import { twClassMerge } from "../../utils/twClassMerge";
-import React, { HtmlHTMLAttributes } from "react";
+import React, { forwardRef, HtmlHTMLAttributes } from "react";
 
-const Card = ({
-  className,
-  children,
-  ...props
-}: HtmlHTMLAttributes<HTMLDivElement>) => {
-  return (
-    <div
-      className={twClassMerge("w-full p-8 bg-bg-purple-light", className)}
-      {...props}
-    >
-      {children}
-    </div>
-  );
-};
+const Card = forwardRef<HTMLDivElement, HtmlHTMLAttributes<HTMLDivElement>>(
+  (
+    { className, children, ...props }: HtmlHTMLAttributes<HTMLDivElement>,
+    ref
+  ) => {
+    return (
+      <div
+        className={twClassMerge("w-full p-8 bg-bg-purple-light", className)}
+        {...props}
+        ref={ref}
+      >
+        {children}
+      </div>
+    );
+  }
+);
 
 export default Card;
