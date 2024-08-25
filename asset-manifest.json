@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.33b8b2cd.css",
-    "main.js": "/static/js/main.2f945cbe.js",
+    "main.css": "/static/css/main.f0e02d85.css",
+    "main.js": "/static/js/main.35a73678.js",
     "static/media/react-native.svg": "/static/media/react-native.55360266b3781dae00a5a77c8916f82d.svg",
     "static/media/mysql.svg": "/static/media/mysql.5ed4a5dd3156991212575952fdf1f366.svg",
     "static/media/jquery.svg": "/static/media/jquery.fcc480227fd31fecc887db807010bf1d.svg",
@@ -11,11 +11,11 @@
     "static/media/bootstrap-5.svg": "/static/media/bootstrap-5.98585727bcfe0b1555649ec9bbab236c.svg",
     "static/media/tailwindcss.svg": "/static/media/tailwindcss.68603ef4173093c409dcd59733df7ecf.svg",
     "index.html": "/index.html",
-    "main.33b8b2cd.css.map": "/static/css/main.33b8b2cd.css.map",
-    "main.2f945cbe.js.map": "/static/js/main.2f945cbe.js.map"
+    "main.f0e02d85.css.map": "/static/css/main.f0e02d85.css.map",
+    "main.35a73678.js.map": "/static/js/main.35a73678.js.map"
   },
   "entrypoints": [
-    "static/css/main.33b8b2cd.css",
-    "static/js/main.2f945cbe.js"
+    "static/css/main.f0e02d85.css",
+    "static/js/main.35a73678.js"
   ]
 }
